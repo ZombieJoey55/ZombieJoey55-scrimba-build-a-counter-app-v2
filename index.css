@@ -1,0 +1,127 @@
+body {
+    /* Background Image */
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("./images/Yu-Gi-Oh_Background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    /* Font */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #ffd700;
+}
+
+.bg-purple{
+    background-color: rgba(48, 0, 82, 0.8); /* purple tint, semi-transparent */
+}
+
+#player-panel-div{
+    display: flex;
+    gap: 25px;
+}
+
+.player-panel{
+    flex: 1;
+}
+
+.player-header{
+        border-bottom: 2px solid #ffd700;
+        background-color: rgba(48, 0, 82, 0.5);
+        margin: 0;
+        padding: 20px    
+}
+
+.player-panel-inner-div{
+    margin: 20px;
+}
+
+.profile-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img{
+    width: 25%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+
+.gold-border{
+    border: 3px solid #ffd700;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+}
+
+.lifepoints{
+    min-width: 30%;
+    font-size: 40px;
+    background: linear-gradient(135deg, #4b0082, #2a0050);
+    padding: 0px 20px;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #ffd700; 
+}
+
+.lp{
+    font-size: 30px;
+}
+
+.lp-div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-content: flex-start;
+    padding: 0px 40px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #4b0082, #2a0050);
+    color: #ffd700;
+    border: 2px solid #ffd700; 
+    cursor: pointer;
+    flex-basis: 150px;
+    min-width: 33%;
+    flex-grow: 1;
+}
+
+.btn-green {
+  background: linear-gradient(135deg, #2e7d32, #1a5c1a);
+}
+
+.btn-big{
+    min-width: 100%;
+}
+
+.btn-red {
+  background: linear-gradient(135deg, #c41e3a, #5c1a1a);
+}
+
+.blue-border {
+    border: 3px solid #1e90ff;
+    box-shadow: 0 0 10px rgba(30, 144, 255, 0.7);
+}
+
+#duel-reset-div{
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#btn-reset{
+    margin: 0;
+}

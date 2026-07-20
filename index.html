@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Header Div -->
+    <div id="main-header" class="bg-purple">
+        <h1>Yu-Gi-Oh! Life Points Calculator</h1>
+    </div>
+    <!-- Player Panels -->
+    <div id="player-panel-div">
+        <!-- Player One -->
+        <div id="player-one" class="player-panel bg-purple">
+            <h2 class="player-header">Player One</h2>
+            <div class="player-panel-inner-div">
+                <!-- Profile Div -->
+                <div class="profile-div">
+                    <img src="./images/Yami_Profile.webp" class="profile-img gold-border"
+                        alt="Yami Yugi profile picture">
+                    <p class="lifepoints"><span class="lp">LP</span><span id="player-1-count-el">8000</span></p>
+                </div>
+            </div>
+            <div class="lp-div">
+                <button class="btn btn-green" onclick="player1Increment10()">+10</button>
+                <button class="btn btn-green" onclick="player1Increment100()">+100</button>
+                <button class="btn btn-green" onclick="player1Increment500()">+500</button>
+                <button class="btn btn-green" onclick="player1Increment1000()">+1000</button>
+                <button class="btn btn-big btn-green" onclick="player1IncrementDouble()">*2</button>
+            </div>
+            <div class="lp-div">
+                <button class="btn btn-red" onclick="player1Decrement10()">-10</button>
+                <button class="btn btn-red" onclick="player1Decrement100()">-100</button>
+                <button class="btn btn-red" onclick="player1Decrement500()">-500</button>
+                <button class="btn btn-red" onclick="player1Decrement1000()">-1000</button>
+                <button class="btn btn-big btn-red" onclick="player1DecrementHalf()">/2</button>
+            </div>
+        </div>
+        <!-- Player Two -->
+        <div id="player-two" class="player-panel bg-purple">
+            <h2 class="player-header">Player Two</h2>
+            <div class="player-panel-inner-div">
+                <!-- Profile Div -->
+                <div class="profile-div">
+                    <img src="./images/Kaiba_Profile.webp" class="profile-img blue-border"
+                        alt="Seto Kaiba profile picture">
+                    <p class="lifepoints"><span class="lp">LP</span><span id="player-2-count-el">8000</span></p>
+                </div>
+            </div>
+            <div class="lp-div">
+                <button class="btn btn-green" onclick="player2Increment10()">+10</button>
+                <button class="btn btn-green" onclick="player2Increment100()">+100</button>
+                <button class="btn btn-green" onclick="player2Increment500()">+500</button>
+                <button class="btn btn-green" onclick="player2Increment1000()">+1000</button>
+                <button class="btn btn-big btn-green" onclick="player2IncrementDouble()">*2</button>
+            </div>
+            <div class="lp-div">
+                <button class="btn btn-red" onclick="player2Decrement10()">-10</button>
+                <button class="btn btn-red" onclick="player2Decrement100()">-100</button>
+                <button class="btn btn-red" onclick="player2Decrement500()">-500</button>
+                <button class="btn btn-red" onclick="player2Decrement1000()">-1000</button>
+                <button class="btn btn-big btn-red" onclick="player2DecrementHalf()">/2</button>
+            </div>
+        </div>
+    </div>
+    <div id="duel-reset-div">
+        <button id="btn-reset" class="btn" onclick="reset()">Reset Duel</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
