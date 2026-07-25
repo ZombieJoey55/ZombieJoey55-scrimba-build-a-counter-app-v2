@@ -23,7 +23,8 @@
                 <div class="profile-div">
                     <img src="./images/Yami_Profile.webp" class="profile-img gold-border"
                         alt="Yami Yugi profile picture">
-                    <p class="lifepoints"><span class="lp">LP</span><span id="player-1-count-el">8000</span></p>
+                    <p class="lifepoints"><span class="lp">LP</span><span id="player-1-count-el" aria-live="polite"
+                            aria-atomic="true">8000</span></p>
                 </div>
             </div>
             <div class="lp-div">
@@ -31,7 +32,8 @@
                 <button class="btn btn-green" onclick="player1Increment100()">+100</button>
                 <button class="btn btn-green" onclick="player1Increment500()">+500</button>
                 <button class="btn btn-green" onclick="player1Increment1000()">+1000</button>
-                <button class="btn btn-big btn-green" onclick="player1IncrementDouble()">*2</button>
+                <button class="btn btn-big btn-green" onclick="player1IncrementDouble()"
+                    aria-label="Double Player One's life points">*2</button>
             </div>
             <div class="lp-div">
                 <button class="btn btn-red" onclick="player1Decrement10()">-10</button>
@@ -49,7 +51,8 @@
                 <div class="profile-div">
                     <img src="./images/Kaiba_Profile.webp" class="profile-img blue-border"
                         alt="Seto Kaiba profile picture">
-                    <p class="lifepoints"><span class="lp">LP</span><span id="player-2-count-el">8000</span></p>
+                    <p class="lifepoints"><span class="lp">LP</span><span id="player-2-count-el" aria-live="polite"
+                            aria-atomic="true">8000</span></p>
                 </div>
             </div>
             <div class="lp-div">
@@ -57,7 +60,8 @@
                 <button class="btn btn-green" onclick="player2Increment100()">+100</button>
                 <button class="btn btn-green" onclick="player2Increment500()">+500</button>
                 <button class="btn btn-green" onclick="player2Increment1000()">+1000</button>
-                <button class="btn btn-big btn-green" onclick="player2IncrementDouble()">*2</button>
+                <button class="btn btn-big btn-green" onclick="player2IncrementDouble()"
+                    aria-label="Double Player Two's life points">*2</button>
             </div>
             <div class="lp-div">
                 <button class="btn btn-red" onclick="player2Decrement10()">-10</button>
