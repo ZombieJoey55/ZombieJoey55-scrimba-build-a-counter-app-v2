@@ -53,7 +53,7 @@ function player1Decrement1000() {
 }
 
 function player1DecrementHalf() {
-    player1LpCount = Math.max(0, Math.floor(player1LpCount / 2))
+    player1LpCount = Math.ceil(player1LpCount / 2)
     player1CountEl.textContent = player1LpCount
 }
 
@@ -106,7 +106,7 @@ function player2Decrement1000() {
 }
 
 function player2DecrementHalf() {
-    player2LpCount = Math.max(0, Math.floor(player2LpCount / 2))
+    player2LpCount = Math.ceil(player2LpCount / 2)
     player2CountEl.textContent = player2LpCount
 }
 
